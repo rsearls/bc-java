@@ -3,8 +3,8 @@ package org.bouncycastle.mail.smime;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import javax.mail.BodyPart;
-import javax.mail.MessagingException;
+import jakarta.mail.BodyPart;
+import jakarta.mail.MessagingException;
 
 import org.bouncycastle.cms.CMSException;
 import org.bouncycastle.cms.CMSProcessable;

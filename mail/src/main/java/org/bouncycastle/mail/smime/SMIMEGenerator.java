@@ -8,12 +8,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.crypto.KeyGenerator;
-import javax.mail.Header;
-import javax.mail.MessagingException;
-import javax.mail.Multipart;
-import javax.mail.Session;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
+import jakarta.mail.Header;
+import jakarta.mail.MessagingException;
+import jakarta.mail.Multipart;
+import jakarta.mail.Session;
+import jakarta.mail.internet.MimeBodyPart;
+import jakarta.mail.internet.MimeMessage;
 
 import org.bouncycastle.cms.CMSEnvelopedGenerator;
 import org.bouncycastle.util.Strings;

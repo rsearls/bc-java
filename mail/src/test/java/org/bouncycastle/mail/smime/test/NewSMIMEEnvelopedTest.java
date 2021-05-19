@@ -15,10 +15,10 @@ import java.security.cert.X509Certificate;
 import java.util.Arrays;
 
 import javax.crypto.Cipher;
-import javax.mail.MessagingException;
-import javax.mail.Session;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
+import jakarta.mail.MessagingException;
+import jakarta.mail.Session;
+import jakarta.mail.internet.MimeBodyPart;
+import jakarta.mail.internet.MimeMessage;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

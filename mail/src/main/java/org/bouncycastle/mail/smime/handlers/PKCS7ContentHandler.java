@@ -6,11 +6,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import javax.activation.ActivationDataFlavor;
-import javax.activation.DataContentHandler;
-import javax.activation.DataSource;
-import javax.mail.MessagingException;
-import javax.mail.internet.MimeBodyPart;
+import jakarta.activation.ActivationDataFlavor;
+import jakarta.activation.DataContentHandler;
+import jakarta.activation.DataSource;
+import jakarta.mail.MessagingException;
+import jakarta.mail.internet.MimeBodyPart;
 
 import org.bouncycastle.mail.smime.SMIMEStreamingProcessor;
 
@@ -18,11 +18,11 @@ public class PKCS7ContentHandler
     implements DataContentHandler 
 {
     private final ActivationDataFlavor _adf;
-    private final DataFlavor[]         _dfs;
+    private final ActivationDataFlavor[]         _dfs;
     
     PKCS7ContentHandler(
         ActivationDataFlavor adf,
-        DataFlavor[]         dfs)
+        ActivationDataFlavor[]         dfs)
     {
         _adf = adf;
         _dfs = dfs;
@@ -36,7 +36,7 @@ public class PKCS7ContentHandler
     }
     
     public Object getTransferData(
-        DataFlavor df, 
+            ActivationDataFlavor df,
         DataSource ds) 
         throws IOException 
     { 
@@ -50,7 +50,7 @@ public class PKCS7ContentHandler
         }
     }
     
-    public DataFlavor[] getTransferDataFlavors() 
+    public ActivationDataFlavor[] getTransferDataFlavors()
     {
         return _dfs;
     }
